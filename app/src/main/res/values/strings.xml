@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">DigiShop</string>
+    <string name="enter_a_username">Enter a username</string>
+    <string name="login">Login</string>
+</resources>

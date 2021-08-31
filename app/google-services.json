@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "405936693212",
+    "project_id": "raja-1103",
+    "storage_bucket": "raja-1103.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:405936693212:android:9b3ff7c648cbc7cef7f919",
+        "android_client_info": {
+          "package_name": "com.android.application"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "405936693212-468u75r1afncjq8er0kc6il82buvr6fj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA_cB5pSivfBWil763-do6tPzubPV7TOBg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "405936693212-468u75r1afncjq8er0kc6il82buvr6fj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:405936693212:android:aab5c5159248bc40f7f919",
+        "android_client_info": {
+          "package_name": "com.androidlearn.digishop"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "405936693212-468u75r1afncjq8er0kc6il82buvr6fj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA_cB5pSivfBWil763-do6tPzubPV7TOBg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "405936693212-468u75r1afncjq8er0kc6il82buvr6fj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
