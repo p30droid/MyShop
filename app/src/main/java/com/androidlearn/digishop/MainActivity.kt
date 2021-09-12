@@ -4,8 +4,15 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import androidx.fragment.app.Fragment
+import com.androidlearn.digishop.config.AppConfig
 import com.androidlearn.digishop.databinding.ActivityMainBinding
+import com.androidlearn.digishop.di.*
 import com.androidlearn.digishop.ui.login.LoginActivity
+import com.androidlearn.digishop.ui.main.adapter.TabsAdapter
+import com.androidlearn.digishop.ui.main.category.CategoryFragment
+import com.androidlearn.digishop.ui.main.home.HomeFragment
+import com.androidlearn.digishop.ui.main.userProfile.UserProfileFragment
 import com.google.android.gms.ads.AdListener
 import com.google.android.gms.ads.AdRequest
 import com.google.android.gms.ads.LoadAdError
@@ -15,6 +22,7 @@ import com.google.android.gms.tasks.OnCompleteListener
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.ktx.Firebase
+import java.util.ArrayList
 
 class MainActivity : AppCompatActivity() {
 
@@ -33,6 +41,15 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
         auth = Firebase.auth
+
+
+        val fragments: MutableList<Fragment> = ArrayList()
+        fragments.add(HomeFragment())
+        fragments.add(CategoryFragment())
+        fragments.add(UserProfileFragment())
+
+        binding.pager.adapter = TabsAdapter(this@MainActivity, fragments)
+
 
         binding.imgLogin.setOnClickListener {
 
@@ -55,6 +72,7 @@ class MainActivity : AppCompatActivity() {
 
         }
 
+/*
 
         val adRequest = AdRequest.Builder().build()
         binding.adView.loadAd(adRequest)
@@ -87,6 +105,7 @@ class MainActivity : AppCompatActivity() {
 
 
         }
+*/
 
 
         var adRequestInterstial = AdRequest.Builder().build()
@@ -105,6 +124,17 @@ class MainActivity : AppCompatActivity() {
         })
 
 
+        val contact : Contact = SimpleContact()
+        val user = User(contact)
+
+        val contact2 = ExtendedContact()
+        val user2 = User(contact2)
+
+        val component : UserComponent = DaggerUserComponent.builder()
+            .userModule(UserModule()).build();
+
+        component.provideUser().addContact("ALi Pirvand")
+        Log.e("Name", component.provideUser().contact)
 
 
 

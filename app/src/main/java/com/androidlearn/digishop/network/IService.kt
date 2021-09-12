@@ -20,4 +20,7 @@ interface IService {
     fun login(@Field("username") username : String , @Field("password") password : String ) : Call<ResponseBody>
 
 
+    @GET("getCategories.php")
+    fun getCategories() : Call<BaseModel>
+
 }

@@ -39,6 +39,7 @@
 
     </androidx.appcompat.widget.Toolbar>
 
+<!--
 
     <com.google.android.gms.ads.AdView
         android:id="@+id/adView"
@@ -54,12 +55,24 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.84000003"></com.google.android.gms.ads.AdView>
 
+-->
 
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar"
+        app:layout_constraintBottom_toTopOf="@id/nav_bottom"
+        />
 
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/nav_bottom"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        app:menu="@menu/main_menu"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />

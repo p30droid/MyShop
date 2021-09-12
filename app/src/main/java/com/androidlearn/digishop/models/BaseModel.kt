@@ -6,5 +6,6 @@ data class BaseModel(
     val discount: List<Discount>,
     val makeup: List<Makeup>,
     val mobile: List<Mobile>,
-    val news: List<New>
+    val news: List<New>,
+    val categories : List<Category>
 )

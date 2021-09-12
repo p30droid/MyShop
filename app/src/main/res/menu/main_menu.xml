@@ -1,7 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
 
+    <item
+        android:id="@+id/item_home"
+        android:title="@string/home"
+        app:icon="@drawable/ic_baseline_home_24"
+        />
 
+    <item
+        android:id="@+id/item_category"
+        android:title="@string/category"
+        app:icon="@drawable/ic_baseline_category_24"
+        />
+
+    <item
+        android:id="@+id/item_profile"
+        android:title="@string/profile"
+        app:icon="@drawable/ic_baseline_self_improvement_24"
+        />
 
 </menu>
