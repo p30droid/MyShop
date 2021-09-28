@@ -1,6 +1,7 @@
 package com.androidlearn.digishop.network
 
 import com.androidlearn.digishop.models.BaseModel
+import io.reactivex.rxjava3.core.Observable
 import okhttp3.ResponseBody
 import retrofit2.Call
 import retrofit2.http.Field
@@ -22,5 +23,21 @@ interface IService {
 
     @GET("getCategories.php")
     fun getCategories() : Call<BaseModel>
+
+    @GET("home.php")
+    fun home() : Observable<BaseModel>;
+
+    @GET("getCategories.php")
+    fun categories() : Observable<BaseModel>;
+
+    @GET("home.php")
+    fun home1(): Observable<BaseModel>
+
+    @GET("home.php")
+    fun home2(): Observable<BaseModel>
+
+    @GET("home.php")
+    fun home3(): Observable<BaseModel>
+
 
 }

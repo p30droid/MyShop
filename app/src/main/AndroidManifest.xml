@@ -14,6 +14,15 @@
         android:theme="@style/Theme.DigiShop"
         android:usesCleartextTraffic="true">
         <activity
+            android:name=".ui.productDetail.descriptionDetail.DescriptionActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ui.cart.CartActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ui.productDetail.ProductActivity"
+            android:exported="true" />
+        <activity
             android:name=".ui.profile.ProfileActivity"
             android:exported="true"
             android:label="@string/title_activity_profile"

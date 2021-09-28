@@ -12,6 +12,7 @@ import androidx.lifecycle.LifecycleOwner
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.ViewModelProviders
+import androidx.recyclerview.widget.GridLayoutManager
 import com.androidlearn.digishop.R
 import com.androidlearn.digishop.databinding.FragmentCategoryBinding
 import com.androidlearn.digishop.models.Category
@@ -48,8 +49,22 @@ class CategoryFragment : Fragment() {
         viewModel.category.observe(owner, object : Observer<List<Category>> {
 
             override fun onChanged(t: List<Category>?) {
-               Log.e("onChanged",""+ t!!.size );
-                Toast.makeText(activity ,  "${t.size}", Toast.LENGTH_LONG).show()
+
+
+                binding.progressBar.visibility = View.GONE
+
+
+                var adapter =  CategoryAdapter(t!!)
+
+                binding.recyclerCategory.adapter = adapter
+
+                var manager = GridLayoutManager(activity!!.applicationContext , 2)
+                binding.recyclerCategory.layoutManager = manager
+
+
+
+
+
             }
 
 

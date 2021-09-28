@@ -1,11 +1,24 @@
 <resources>
     <string name="app_name">DigiShop</string>
     <string name="enter_a_username">Enter a username</string>
-    <string name="login">Login</string>
+    <string name="login">وورد کاربران</string>
     <string name="title_activity_profile">ProfileActivity</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="home">Home</string>
-    <string name="category">Category</string>
-    <string name="profile">Profile</string>
+    <string name="home">خانه</string>
+    <string name="category">دسته بندی</string>
+    <string name="profile">پروفایل</string>
+    <string name="mobiles">موبایل ها</string>
+    <string name="makeup">آرایشی و بهداشتی</string>
+    <string name="discount">تخفیفان</string>
+    <string name="product_name">نام محصول</string>
+    <string name="short_description">توضیح کوتاه :</string>
+    <string name="pay">پرداخت</string>
+    <string name="add_basket">محصول با موفقیت به سبد خرید اضافه شد</string>
+    <string name="cart">سبد خرید</string>
+    <string name="payment_invoice">قیمت پرداختی :</string>
+    <string name="features">ویژگی های محصول</string>
+    <string name="add_more">توضیحات کامل در ادامه ...</string>
+    <string name="buy_detail">با خرید از این محصول شما</string>
+    <string name="adding_basket">افزودن به سبد خرید</string>
 </resources>
